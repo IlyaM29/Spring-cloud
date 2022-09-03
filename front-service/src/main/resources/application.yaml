@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: front-service
+server:
+  port: 51586
+logging:
+  level:
+    root: info
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+      fetchRegistry: false
